@@ -1,0 +1,76 @@
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+
+.banner {
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(75, 80, 75);
+    color: white;
+}
+
+.page-title {
+    display: inline;
+}
+
+.main-menu {
+    background-color: rgb( 119, 127, 119 );
+}
+
+
+.main-menu a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu > li {
+    display: inline-block;
+}
+
+.main-menu a:hover {
+    background-color: rgba( 48, 48, 48, 0.8 );
+}
+
+.main-menu > li > a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.main-menu-list {
+    display: inline-block;
+}
+
+
+.item-with-sub-menu {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 35px; /* from the top of the .item-with-sub-menu element */
+    left: 0px;
+    white-space: nowrap;
+    padding: 1em;
+    background-color: lightgrey;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 0.5em;
+    color: rgb(98, 74, 233);
+    text-decoration: none;
+}
+
+/* modify the selector so that it selects the sub-menu only when it is within the ..item-with-sub-menu item that is being hovered upon */
+.item-with-sub-menu:hover .sub-menu {
+    display: block;
+}

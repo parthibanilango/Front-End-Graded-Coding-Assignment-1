@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Pharmacy</title>
+        <link rel="stylesheet" href="css/external/normalize.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script>
+            function changeBackground(e){
+                var ele = document.getElementById(e.parentNode.id);
+                ele.style.backgroundColor = 'rgb(' + 250 + ',' + 234 + ',' + 230 + ')';
+                ele.style.border = "2px solid rgb(0, 255, 76)";
+            };
+            function resetBackground(e){
+                var ele = document.getElementById(e.parentNode.id);
+                ele.style.backgroundColor = "";
+                ele.style.border = "";
+            };
+            function changeHeightAndWidth(e){
+                var ele = document.getElementById(e.parentNode.id);
+                ele.style.height = "1.2em";
+                ele.style.border = "1.2em";
+            };
+        </script>
+    </head>
+    <body>
+        
+        <nav id="navigate">
+            <div class="banner">
+                <div class="container">
+                    <h1 class="page-title">
+                        Pharmacy
+                    </h1>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="container">
+                    <ul class="main-menu-list list-unstyled">
+                        <li class="item-with-sub-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="main-menu-list list-unstyled">
+                        <li class="item-with-sub-menu">
+                            <a href="#">Our Medicines</a>
+                            <ul class="sub-menu list-unstyled">
+                                <li>
+                                    <a href="#">Fever</a>
+                                </li>
+                                <li>
+                                    <a href="#">Muscle Pains</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cold and Cough</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main-menu-list list-unstyled">
+                        <li class="item-with-sub-menu">
+                            <a href="#">Health Care</a>
+                            <ul class="sub-menu list-unstyled">
+                                <li>
+                                    <a href="#">Baby Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Skin Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Personal Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pet Care</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="main-menu-list list-unstyled">
+                        <li class="item-with-sub-menu"><a href="lab-test-form.html">Lab Test</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            
+            <div id="id1">
+                <div id="ad-bg" class="ad-bg-class">
+                    <img src="images/animation/ani1.jpg" alt="image1"/>
+                    <img src="images/animation/ani2.png" alt="image2"/>
+                    <img src="images/animation/ani3.jpg" alt="image3"/>
+                    <img src="images/animation/ani4.jpg" alt="image4" />
+                    <img src="images/animation/ani5.jpg" alt="image5"/>
+                </div>
+            </div>
+            
+            <div id="id2">
+                <div class="div-item product-gallery">
+                    <div>
+                    <h2>Covid Care</h2>
+                    </div>
+                    <div class="product-item" id="prd-item1">
+                        <div class="text-center">Covid Test Kit</div>
+                        <div id="container2">
+                            <img src="images/products/c1.jpg" alt="Covid Test Kit" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 40</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn1" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" id="prd-item2">
+                        <div class="text-center">Covid Essentials</div>
+                        <div id="container2">
+                            <img src="images/products/c2.jpg" alt="Covid Essentials" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 240</div>
+                        <div class="text-left">Offer: Rs. 170/-</div>
+                        <button id="btn2" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" id="prd-item3">
+                        <div class="text-center">Sanitizer Bottle</div>
+                        <div id="container2">
+                            <img src="images/products/c3.jpg" alt="Sanitizer Bottle" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 99</div>
+                        <div class="text-left">Offer: Rs. 87/-</div>
+                        <button id="btn3" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" id=prd-item4>
+                        <div class="text-center">Mask</div>
+                        <div id="container2">
+                            <img src="images/products/c4.jpg" alt="Mask" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 45</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn4" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div> 
+                </div>
+            </div>
+            <div id="id3">
+                <div class="div-item product-gallery">
+                    <div class="div-item1">
+                        <h2>Diabetic Care</h2>
+                    </div>
+                    <div class="product-item" >
+                        <div class="text-center">BGR 34</div>
+                        <div id="container2">
+                            <img src="images/products/d1.jpg" alt="BGR 34" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 45</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn5" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" >
+                        <div class="text-center">Dabur</div>
+                        <div id="container2">
+                            <img src="images/products/d2.jpg" alt="Dabur" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 45</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn6" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" >
+                        <div class="text-center">Colgate</div>
+                        <div id="container2">
+                            <img src="images/products/d3.jpg" alt="Colgate" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 40</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn7" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                    <div class="product-item" >
+                        <div class="text-center">Unbic</div>
+                        <div id="container2">
+                            <img src="images/products/d4.png" alt="Unibic" class="product-item-image" />
+                        </div>
+                        <div class="text-left">Rs. 35</div>
+                        <div class="text-left">Offer: Rs. 30/-</div>
+                        <button id="btn8" onmouseout="resetBackground(this)" onclick="changeBackground(this)"; >Add to cart</button>
+                    </div>
+                </div>
+            </div>
+             
+        </main>
+        <div id="id4" class="div-item">
+            <footer>@copyright. Only for demonstration purpose.</footer>
+        </div>
+   
+        
+    </body>
+</html>
